@@ -1,0 +1,20 @@
+<students>
+    <student>
+        <id sr="a">12</id>
+        <name>alamin</name> 
+        <email>alamin@aiub.edu</email>
+        <add>
+            <house>20</house>
+            <road>12</road>
+        </add>
+    </student>
+    <student>
+        <id sr="b">11</id>
+        <name>xyz</name> 
+        <email>xyz@aiub.edu</email>
+        <add>
+            <house></house>
+            <road>12</road>
+        </add>
+    </student>
+</students>
