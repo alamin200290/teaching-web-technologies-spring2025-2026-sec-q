@@ -47,7 +47,6 @@ username.addEventListener('keyup', test);
 
 function test(){
     let head = document.getElementsByTagName('h1')[0];
-    
     let msg = document.getElementById('msg');
 
     if(username.value == ""){
@@ -60,3 +59,38 @@ function test(){
         msg.innerHTML = "";
     }
 }
+
+let btn1 = document.getElementById('btn1');
+btn1.addEventListener('click', function(){
+    console.log('test');
+    let d1 = document.getElementById('d1');
+    let current = window.getComputedStyle(d1).left;
+
+    // for(let a=0; a<20;a++){
+    //     setTimeout(function (){
+    //         if(current == ""){
+    //         current = "10px";
+    //         }else{
+    //             //let newPos = current.replace('px','').trim();
+    //             current = parseInt(current)+10+'px';
+    //         }
+    //         d1.style.left = current;
+    //     }, 1000*(a+1));
+    // }
+
+    let count =1;
+    let interval = setInterval(() => {
+
+        if(count>10){
+            clearInterval(interval);
+        }else{
+             if(current == ""){
+            current = "10px";
+            }else{
+                current = parseInt(current)+10+'px';
+            }
+            d1.style.left = current;
+        }
+        count++;
+    }, 1000);
+});
