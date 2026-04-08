@@ -1,6 +1,6 @@
 <?php
 
-    $name = "alamin";
+    $name = "";
     // $id = 12;
     // $cgpa = 3.5;
 
@@ -12,8 +12,6 @@
     //             ['alamin', 12, 3.5]
     //         ];
     // $stds[1][1];
-
-    $std = ['name'=>'alamin', 'id'=>12, 'cgpa'=>3.5];
     //$std['name'];
 
     $stds = [
@@ -24,15 +22,22 @@
 
     //$stds['s3'];
 
-    echo "test <br>";
+    //echo "test <br>";
     // echo $std['name'];
     //print($name);
     //print_r($stds['s3']);
     //var_dump($std);
-    echo $std["name"]."-".$std["id"]."-".$std["cgpa"];
+    //echo $std["name"]."-".$std["id"]."-".$std["cgpa"];
 
-    for($i=0; $i<10; $i++){
-        echo "<h1>".$std['name']."</h1>";
-    }
+    // for($i=0; $i<count($std); $i++){
+    //     echo "<h1>".$std['name']."</h1>";
+    // }
+    // $std = ['name'=>'alamin', 'id'=>12, 'cgpa'=>3.5];
 
+    // foreach($std as $v){
+    //     echo $v."<br>";
+    // }
 ?>
+
+
+<h1>Your profile name is: <?php if($name == ""){echo "not found!";}else{echo $name;} ?> </h1>
